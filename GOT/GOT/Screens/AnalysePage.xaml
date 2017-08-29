@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GOT.Screens.AnalysePage"
+             Title="Scan">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+            <StackLayout>
+                <StackLayout>
+                    <ActivityIndicator x:Name="ind"
+                                   IsVisible="False"
+                                   IsRunning="False"
+                                   Color="Red"
+                                   VerticalOptions="CenterAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout x:Name="scanLayout" IsVisible="True" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Image x:Name="pic"
+                   VerticalOptions="StartAndExpand"/>
+                    <Button x:Name="takeBtn" Text="Scan"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
